@@ -1,0 +1,12 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "moduleNameMapper": {
+    "axios": "axios/dist/node/axios.cjs"
+  },
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  }
+}

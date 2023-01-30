@@ -1,0 +1,18 @@
+version: '3'
+services:
+  app:
+    environment:
+      - OPEN_RATES_APP_ID=8e0709e29b5c4317a4ae8d702d18e53c
+    build: .
+    command: npm run start:dev
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - sqs
+    network_mode: host
+  sqs:
+    image: roribio16/alpine-sqs
+    ports:
+      - "9324:9324"
