@@ -26,6 +26,11 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Requirements
+
+[openexchangerates]( https://openexchangerates.org) free API to get currency rates.
+- Create a free account to get APP_ID and update it on docker-compose.yml
+
 ## Installation
 
 ```bash
@@ -36,13 +41,7 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ docker-compose up
 ```
 
 ## Test
